@@ -1,0 +1,296 @@
+
+/* 
+======================
+        css reset
+======================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+======================
+   variables and global
+======================
+*/
+:root {
+    --clr-primary:#000000;
+    --ff-primary: 'Orbitron', sans-serif;
+    --ff-secondary:'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* 
+======================
+     body
+======================
+*/
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* background: red; */
+    width: 80vw;
+    height: 100vh;
+}
+
+
+/* 
+======================
+     navbar
+======================
+*/
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+/* 
+---------
+logo img
+--------
+*/
+.navbar-container div img {
+    width: 7rem;
+    cursor: pointer;
+}
+
+/* 
+----------
+nav items
+---------
+*/
+.navbar-container div ul {
+   display: flex;
+}
+.navbar-container div ul li {
+   list-style: none;
+   margin: 0px 20px;
+   font-size: larger;
+   color: var(--clr-primary);
+   font-weight: 600;
+   font-family: var(--ff-primary);
+   padding: 0.5rem; 
+   cursor: pointer;
+   border-radius: 2rem;
+}
+
+.list-item:hover {
+    padding: none;
+    margin: 0 20px;
+    color: white;
+    background-color: #000000;
+    border-radius: 2rem;
+    transition: all .3s ease-in-out;
+
+}
+.list {
+    position: relative;
+}
+
+.list:nth-child(1)::before {
+    content: "";
+    width:2.3rem ;
+    position: absolute;
+   border-bottom: 2px solid rgb(38, 37, 37);
+   top: 36px;
+   left: 40px;
+}
+/* 
+----------------
+top search icon
+----------------
+*/
+.button-group {
+    display: flex;
+    align-items: center;
+}
+.button-group div {
+    cursor: pointer;
+}
+.search-icon svg{
+    width: 20px;
+}
+.nav-button {
+    padding: 2px 30px;
+    margin: 0 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+    font-family: var(--ff-secondary);
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.nav-button:hover {
+    background-color: black;
+    color: white;
+    transition: all .5s ease-in-out;
+
+}
+
+
+/* 
+======================
+     banner
+======================
+*/
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    position: relative;
+    height: 70vh;
+}
+
+.hero-container-right{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 6rem;
+}
+
+
+.hero-container div img {
+    width: 22rem;
+}
+/* 
+----------------
+main heading
+----------------
+*/
+.hero-heading {
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-family: var(--ff-primary);
+}
+
+.hero-description {
+    margin: 3rem 5rem;
+    font-family: var(--ff-secondary);
+    font-size: small;
+    color: #000000;
+}
+
+
+/* 
+----------------------
+ Email and join button
+----------------------
+*/
+.button-email {
+    font-family: var(--ff-primary);
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 2px solid var(--clr-primary);
+    margin: 5px 10px 0 0;
+    color: #000000;
+    cursor: pointer;
+
+}
+.button-email:hover {
+    color: white;
+    background-color:black ;
+    transition: all .3s ease-in-out;
+}
+
+.button-join {
+    font-family: var(--ff-primary);
+    background: var(--clr-primary);
+    color: white;
+    padding: 3px;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+.button-join:hover {
+    background-color: transparent;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+/* 
+-------------
+ contact us
+-------------
+*/
+.contact-heading { 
+    margin-top: 3rem;
+    font-family: var(--ff-secondary);
+    font-weight: 300;
+}
+
+/* 
+======================
+ icons bg images
+======================
+*/
+/* relative to hero container */
+.square::before {
+    content: "";
+    position: absolute;
+    background: url(./assets/start.png);
+    background-size: 37px 37px;
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    z-index: 2;
+    bottom: 25px;
+    left: 42%;
+    
+}
+.square img{
+    position: absolute;
+    bottom: -1.5rem;
+    left: 9rem;
+    width: 16rem;
+    z-index: -1;
+}
+
+.star img {
+    position: absolute;
+    width: 3rem;
+    top: 0;
+    right: 0;
+}
+
+.globe {
+    width: 3rem;
+    position: absolute;
+    left: 53%;
+    top: -30px;
+}
+
+
+/* 
+======================
+social media icons 
+======================
+*/
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons span img {
+    width: 1.5rem;
+    margin: 5px;
+}
