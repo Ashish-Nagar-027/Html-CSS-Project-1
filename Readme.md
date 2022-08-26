@@ -2,7 +2,7 @@
 
 ## 📌 About  project :
 
-This is **Street Style Landing Page.** <br/> It a beautiful landing page . <br/> 
+This is **Street Style Landing Page.** <br/> It's a beautiful landing page . <br/> 
  <br/> 
 with the help of media queries i have made it responsive so that anyone can also try it in mobile devices.<br/> 
 
